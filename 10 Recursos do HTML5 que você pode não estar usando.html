@@ -1,0 +1,91 @@
+<details>
+    <summary>Clique aqui para mais detalhes</summary>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Cidade</th>
+                <th>Emprego</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Adam</td>
+                <td>Houston</td>
+                <td>UI/UX</td>
+            </tr>
+        </table>
+</details>
+
+<h2> Lista de compras </h2>
+<ul class="content-editable" contenteditable="true">
+    <li> 1. Leite </li>
+    <li> 2. Pão </li>
+    <li> 3. Presunto </li>
+</ul>
+
+
+<div>
+  <img src="circo.jpg" width="500" height="500" alt="Circo" usemap="#mapacirco">
+
+  <map name="mapacirco">
+      <area shape="rect" coords="67,114,207,254" href="palhaco.htm">
+      <area shape="rect" coords="222,141,318, 256" href="malabarista.htm">
+  </map>
+</div>
+
+<p> Esse texto tem um <mark>"DESTAQUE"</mark></p>
+
+<div 
+    class="data-attribute" 
+    id="data-attr" 
+    data-custom-attr="Você é TOP!"> 
+Eu tenho um segredo!
+</div>
+
+<button onclick="revelar()">Revelar</button>
+<script>
+    function revelar() {
+        let dataDiv = document.getElementById('data-attr');
+        let value = dataDiv.dataset['customAttr'];
+        document.getElementById('msg').innerHTML = `<mark>${value}</mark>`;
+    }
+</script>
+
+<form oninput="x.value=parseInt(a.value) * parseInt(b.value)">
+   <input type="number" id="a" value="0">
+          * <input type="number" id="b" value="0">
+                = <output name="x" for="a b"></output>
+</form>
+
+<form action="" method="get">
+    <label for="fruit">Escolha uma fruta na lista:</label>
+    <input list="frutas" name="fruta" id="fruta">
+        <datalist id="frutas">
+            <option value="Maçã">
+            <option value="Laranja">
+            <option value="Banana">
+            <option value="Morango">
+            <option value="Abacate">
+        </datalist>
+    <input type="submit">
+</form>
+
+<form method="post">
+    <input 
+    type="range" 
+    name="range" 
+    min="0" 
+    max="100" 
+    step="1" 
+    value=""
+    onchange="changeValue(event)"/>
+ </form>
+ <div class="range">
+    <output id="output" name="result">  </output>
+</div>
+
+<label for="home">/home/atapas</label>
+<meter id="home" value="4" min="0" max="10">2 out of 10</meter><br>
+
+<label for="root">/root</label>
+<meter id="root" value="0.6">60%</meter><br>
